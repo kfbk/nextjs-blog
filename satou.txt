@@ -1,0 +1,34 @@
+Vercel＋Next.jsを活用したWebアプリケーション開発入門　第2回
+https://codezine.jp/article/detail/16118
+
+Next.jsプロジェクトの作成
+  npx create-next-app nextjs-blog --use-npm --example "https://github.com/vercel/next-learn/tree/master/basics/learn-starter"
+  cd nextjs-blog
+  npm run dev
+
+GitHubにリポジトリを用意する
+	https://github.com/kfbk
+	new repogitory : nextjs-blog
+	hhttps : https://github.com/kfbk/nextjs-blog.git
+
+手元のソースをGitHubにプッシュする
+	git init
+	git remote add origin https://github.com/kfbk/nextjs-blog.git
+	git branch -M main
+	git push -u origin main
+Vercel
+	Vercelを開いてGitHubのリポジトリ「nextjs-blog」を「Import」します。
+	https://nextjs-blog-eight-olive-25.vercel.app/
+
+以上で出来るので、ソース変更・保存
+	git add .
+	git commit -m "first commit"
+	git push -u origin main			2,3分後に、反映された
+
+Vercel＋Next.jsを活用したWebアプリケーション開発入門　第3回
+https://codezine.jp/article/detail/16473
+
+warning: LF will be replaced by CRLF inが出たときの対処法
+https://penpen-dev.com/blog/warning-lf-willbe/
+
+	git config --global core.autocrlf false
